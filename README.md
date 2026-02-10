@@ -4,7 +4,7 @@ This project is for CSE-4453, Project 2
 ## Contributors:
 * Lucas Cox (lrc331) [TagReaper]
 * Mia Welford (mgw303) [Mia]
-* 
+* Nathaniel Maitland (ndm223) [Shadow-nm]
 * 
 * 
 * 
