@@ -7,7 +7,7 @@ This project is for CSE-4453, Project 2
 * Nathaniel Maitland (ndm223) [Shadow-nm]
 * James Jones (jlj860) [JamesJones860]
 * Jazmaree Rich (jrr719) [JazmareeR]
-* 
+* Nicolas Luciano (Nrl133) (Saber)
 
 ## Requirements:
 * Made with Unity
