@@ -7,18 +7,18 @@ This project is for CSE-4453, Project 2
 * Nathaniel Maitland (ndm223) [Shadow-nm]
 * James Jones (jlj860) [JamesJones860]
 * Jazmaree Rich (jrr719) [JazmareeR]
-* Nicolas Luciano (Nrl133) (Saber)
+* Nicolas Luciano (nrl133) [Saber]
 
 ## Requirements:
 * Made with Unity
-* 2D or 3D???
+* 2D
 * Asset Tools???
 * Sound Design Tools???
 
 ## Design Elements
-* Theme???
-* Genre???
-* Multiplayer or Solo or Co-op???
+* Future-Past / Time Progression
+* Rouge-like
+* Solo
 * Accessability???
 
 ## Pitch Elements:
