@@ -11,18 +11,22 @@ This project is for CSE-4453, Project 2
 
 ## Requirements:
 * Made with Unity
-* 2D
-* Asset Tools???
-* Sound Design Tools???
+* 2D Pixel Art
+### Asset Tools
+* ???
+### Sound Design Tools
+* ???
 
 ## Design Elements
 * Future-Past / Time Progression
 * Rouge-like
 * Solo
-* Accessability???
+### Accessability
+* Color-Blind Safe
+* Multiple Languages
 
 ## Pitch Elements:
 * Unique???
 * Why play???
-* What is it???
-* How to play???
+* NAME is a rouge-like dungeon crawler, where your goal is to reach the end of the dungeon to reset an ancient doomsday clock that's poised to destroy the planet.
+* Keyboard and Mouse or Game Controller can both be used for interaction.
