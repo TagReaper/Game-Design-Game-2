@@ -21,6 +21,8 @@ This project is for CSE-4453, Project 2
 * Future-Past / Time Progression
 * Rouge-like
 * Solo
+### Music
+* Music by WaterFlame | https://waterflame.newgrounds.com/audio
 ### Accessability
 * Color-Blind Safe
 * Multiple Languages???
