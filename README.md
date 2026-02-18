@@ -19,6 +19,7 @@ This project is for CSE-4453, Project 2
 * Solo
 ### Asset Tools
 * Piskel
+* Color Palette (https://lospec.com/palette-list/punolite-plus-remake)
 ### Sound Design Tools
 * JSFXR
 ### Music
