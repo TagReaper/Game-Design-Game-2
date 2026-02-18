@@ -31,5 +31,5 @@ This project is for CSE-4453, Project 2
 ## Pitch Elements:
 * Unique???
 * Why play???
-* NAME is a rouge-like dungeon crawler, where your goal is to reach the end of the dungeon to reset an ancient doomsday clock that's poised to destroy the planet.
+* NAME is a rouge-like dungeon crawler, where your goal is to battle your way to the end of the dungeon to reset an ancient doomsday clock that's poised to destroy the planet, to your knowledge.
 * Keyboard and Mouse or Game Controller can both be used for interaction.
