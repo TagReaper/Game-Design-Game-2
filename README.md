@@ -12,15 +12,15 @@ This project is for CSE-4453, Project 2
 ## Requirements:
 * Made with Unity
 * 2D Pixel Art
-### Asset Tools
-* Piskel
-### Sound Design Tools
-* JSFXR
 
 ## Design Elements
 * Future-Past / Time Progression
 * Rouge-like
 * Solo
+### Asset Tools
+* Piskel
+### Sound Design Tools
+* JSFXR
 ### Music
 * Music by WaterFlame | https://waterflame.newgrounds.com/audio
 ### Accessability
