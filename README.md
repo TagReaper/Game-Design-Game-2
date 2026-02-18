@@ -1,21 +1,21 @@
-# Game-Design-Game-2
+# Game Design Game 2: Untitled
 This project is for CSE-4453, Project 2
 
-## Contributors:
-* Lucas Cox (lrc331) [TagReaper]
-* Mia Welford (mgw303) [Mia]
-* Nathaniel Maitland (ndm223) [Shadow-nm]
-* James Jones (jlj860) [JamesJones860]
-* Jazmaree Rich (jrr719) [JazmareeR]
-* Nicolas Luciano (nrl133) [Saber]
+## Contributors & Role:
+* Lucas Cox (lrc331) [TagReaper]            |  Lead Programmer & Flex Mechanics Designer
+* Mia Welford (mgw303) [Mia]                |  Lead Artist & Animator
+* Nathaniel Maitland (ndm223) [Shadow-nm]   |  SFX Designer & Flex Programmer
+* James Jones (jlj860) [JamesJones860]      |  World Design & Environment Direction
+* Jazmaree Rich (jrr719) [JazmareeR]        |  Flex Artist & Flex World Designer
+* Nicolas Luciano (nrl133) [Saber]          |  Mechanics Designer & Flex Programmer
 
 ## Requirements:
 * Made with Unity
 * 2D Pixel Art
 ### Asset Tools
-* ???
+* Piskel
 ### Sound Design Tools
-* ???
+* JSFXR
 
 ## Design Elements
 * Future-Past / Time Progression
@@ -23,7 +23,7 @@ This project is for CSE-4453, Project 2
 * Solo
 ### Accessability
 * Color-Blind Safe
-* Multiple Languages
+* Multiple Languages???
 
 ## Pitch Elements:
 * Unique???
