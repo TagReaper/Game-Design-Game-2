@@ -3,12 +3,19 @@ using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
-     public Rigidbody2D rb;
+    public Rigidbody2D rb;
+    [Header("Movemennt")]
     public float moveSpeed = 5f;
+    float horizontalMovement;
+
+    [Header("Jumping")]
     public float jumpForce = 10f;
 
-    float jump;
-    float horizontalMovement;
+    [Header("GroundCheck")]
+    public Transform groundCheckPos;
+    public Vector2 groundCheckSize = new Vector2(0.5f, 0.05f);
+    public LayerMask groundLayer;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -38,4 +45,8 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    private void OnDrawGizmosSelected() {
+        Gizmos.color = Color.white;
+        Gizmos.DrawCube(groundCheckPos.position, groundCheckSize);
+    }
 }
