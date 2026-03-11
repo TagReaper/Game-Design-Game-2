@@ -31,11 +31,11 @@ public class PlayerMovement : MonoBehaviour
 
         if (context.ReadValue<Vector2>().x == 1)
         {
-            transform.localScale = new Vector2(1, 1);
+            transform.rotation = Quaternion.Euler(0, 0, 0);
         }
         else if (context.ReadValue<Vector2>().x == -1)
         {
-            transform.localScale = new Vector2(-1, 1);
+            transform.rotation = Quaternion.Euler(0, 180, 0);
         }
 
         if (context.ReadValue<Vector2>().x != 0)

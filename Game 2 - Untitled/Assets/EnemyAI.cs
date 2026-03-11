@@ -13,6 +13,7 @@ public class EnemyAI : MonoBehaviour
     
     public float AggroDist;
     public float AggroKeepDist;
+    public float rotationSpeed = 50f;
 
     private float distance;
     
@@ -53,11 +54,17 @@ public class EnemyAI : MonoBehaviour
         }
         else if (player.transform.position.x - transform.position.x > 0)
         {
-            transform.localScale = new Vector2(-1, 1);
+            //transform.Rotate(0, 180, 0, Space.Self);
+            //transform.Rotate(Vector3.up * rotationSpeed * Time.deltaTime);
+            transform.rotation = Quaternion.Euler(0, 180, 0);
+            //transform.localScale = new Vector2(-1, 1);
         }
         else if (player.transform.position.x - transform.position.x < 0)
         {
-            transform.localScale = new Vector2(1, 1);
+            //transform.Rotate(0, 0, 0, Space.Self);
+            //transform.Rotate(Vector3.up * rotationSpeed * Time.deltaTime);
+            transform.rotation = Quaternion.Euler(0, 0, 0);
+            //transform.localScale = new Vector2(1, 1);
         }
 
     }

@@ -446,7 +446,7 @@ GameObject:
   - component: {fileID: 460633983}
   - component: {fileID: 460633988}
   - component: {fileID: 460633989}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -470,6 +470,7 @@ MonoBehaviour:
   _rotationSpeed: 100
   AggroDist: 0
   AggroKeepDist: 0
+  rotationSpeed: 50
 --- !u!61 &460633984
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -486,7 +487,7 @@ BoxCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -611,8 +612,8 @@ Transform:
   m_GameObject: {fileID: 460633982}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.48, y: 1.3, z: 0.0000000015219}
-  m_LocalScale: {x: 7.625685, y: 7.625685, z: 7.625685}
+  m_LocalPosition: {x: 5.61, y: 0.98, z: 0.0000000013175}
+  m_LocalScale: {x: 6.6012707, y: 6.6012707, z: 6.6012707}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -891,7 +892,7 @@ Transform:
   m_GameObject: {fileID: 742697102}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.86, y: 5.5299997, z: -10}
+  m_LocalPosition: {x: 0.12, y: 5.57, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -907,7 +908,6 @@ GameObject:
   m_Component:
   - component: {fileID: 842775732}
   - component: {fileID: 842775731}
-  - component: {fileID: 842775734}
   - component: {fileID: 842775730}
   - component: {fileID: 842775729}
   - component: {fileID: 842775728}
@@ -1083,7 +1083,7 @@ BoxCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 128
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -1208,7 +1208,7 @@ Transform:
   m_GameObject: {fileID: 842775726}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.86, y: 0.53, z: 0}
+  m_LocalPosition: {x: 0.12, y: 0.57, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1236,34 +1236,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &842775734
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 842775726}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aeab0143f781f1341803067f8c4cffd6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: '::'
-  m_JumpForce: 400
-  m_CrouchSpeed: 0.36
-  m_MovementSmoothing: 0.05
-  m_AirControl: 1
-  m_WhatIsGround:
-    serializedVersion: 2
-    m_Bits: 0
-  m_GroundCheck: {fileID: 0}
-  m_CeilingCheck: {fileID: 0}
-  m_CrouchDisableCollider: {fileID: 0}
-  OnLandEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  OnCrouchEvent:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!70 &842775735
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -1666,7 +1638,7 @@ Transform:
   m_GameObject: {fileID: 1587601832}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.86, y: 5.5299997, z: -10}
+  m_LocalPosition: {x: 0.12, y: 5.57, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
