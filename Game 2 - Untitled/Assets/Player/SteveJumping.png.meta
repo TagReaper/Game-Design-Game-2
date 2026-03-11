@@ -1,13 +1,22 @@
 fileFormatVersion: 2
-guid: 617fe24fb374c15469a105c5c33f8c00
+guid: 2e666526ddcdc82438af4f5f69ee75bc
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4273127388621887956
-    second: SteveIdle_0
+      213: 61522056768378138
+    second: SteveJumping_0
   - first:
-      213: -7471937596367693261
-    second: SteveIdle_1
+      213: 7584458331942802008
+    second: SteveJumping_1
+  - first:
+      213: 6983246280231713074
+    second: SteveJumping_2
+  - first:
+      213: 3210774015630681037
+    second: SteveJumping_3
+  - first:
+      213: 7532315458508696149
+    second: SteveJumping_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -40,7 +49,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -116,45 +125,111 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SteveIdle_0
+      name: SteveJumping_0
       rect:
         serializedVersion: 2
-        x: 155
-        y: 688
-        width: 197
-        height: 288
+        x: 0
+        y: 1040
+        width: 520
+        height: 520
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4d9dcce48b23d4b30800000000000000
-      internalID: 4273127388621887956
+      spriteID: a15d7831cf19ad000800000000000000
+      internalID: 61522056768378138
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SteveIdle_1
+      name: SteveJumping_1
       rect:
         serializedVersion: 2
-        x: 155
-        y: 168
-        width: 197
-        height: 275
+        x: 520
+        y: 1040
+        width: 520
+        height: 520
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 33a1e9818585e4890800000000000000
-      internalID: -7471937596367693261
+      spriteID: 852d3313ba8614960800000000000000
+      internalID: 7584458331942802008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SteveJumping_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 520
+        width: 520
+        height: 520
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23977483e7979e060800000000000000
+      internalID: 6983246280231713074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SteveJumping_3
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 520
+        width: 520
+        height: 520
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc3a8bfa4f5fe8c20800000000000000
+      internalID: 3210774015630681037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SteveJumping_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 520
+        height: 520
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55a28986009288860800000000000000
+      internalID: 7532315458508696149
       vertices: []
       indices: 
       edges: []
@@ -163,7 +238,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 1b49a12dbb240834ab33ccf73d1cf0a4
     internalID: 0
     vertices: []
     indices: 
@@ -171,10 +246,15 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":2.0,"y":3.0},"gridSpriteSize":{"x":520.0,"y":520.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      SteveIdle_0: 4273127388621887956
-      SteveIdle_1: -7471937596367693261
+      SteveJumping_0: 61522056768378138
+      SteveJumping_1: 7584458331942802008
+      SteveJumping_2: 6983246280231713074
+      SteveJumping_3: 3210774015630681037
+      SteveJumping_4: 7532315458508696149
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
