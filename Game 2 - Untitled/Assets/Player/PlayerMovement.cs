@@ -13,7 +13,7 @@ public class PlayerMovement : MonoBehaviour
     float jumps = 0;
     float dir = 0f;
     float horizontalMovement;
-    float maxFallSpeed = 32f;
+    float maxFallSpeed = 10f;
 
     [Header("Jumping")]
     public float jumpForce = 10f;
@@ -78,6 +78,10 @@ public class PlayerMovement : MonoBehaviour
         {
             horizontalMovement = 0f;
         }
+        if (rb.linearVelocity.y < 0f)
+        {
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, Mathf.Max(rb.linearVelocity.y, -maxFallSpeed));
+        }
     }
 
     public void Jump(InputAction.CallbackContext context)
@@ -112,15 +116,15 @@ public class PlayerMovement : MonoBehaviour
             }
             if (rb.linearVelocity.y < 0f)
             {
-                rb.gravityScale = 0.05f;
+                maxFallSpeed = 2f;
             } else
             {
-                rb.gravityScale = 0.1f;
+                maxFallSpeed = 8f;
             }
             isOnWall = true;
         } else
         {
-            rb.gravityScale = 0.1f;
+            maxFallSpeed = 8f;
             isOnWall = false;
         }
     }
