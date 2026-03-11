@@ -107,7 +107,10 @@ public class PlayerMovement : MonoBehaviour
     private void IsTouchingWall(){
         if(Physics2D.OverlapBox(wallCheckPos.position, wallCheckSize, 0, groundLayer))
         {
-            if (rb.linearVelocity.y < 0)
+            if(!isOnWall && jumps > 0) {
+                jumps--;
+            }
+            if (rb.linearVelocity.y < 0f)
             {
                 rb.gravityScale = 0.05f;
             } else
