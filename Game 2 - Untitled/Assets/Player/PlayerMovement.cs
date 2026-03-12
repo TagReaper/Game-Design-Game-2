@@ -5,6 +5,7 @@ public class PlayerMovement : MonoBehaviour
 {
     public Rigidbody2D rb;
     public SpriteRenderer sprite;
+    public Animator animator;
     bool isFlipped = false;
     bool isOnWall;
     [Header("Movement")]
@@ -36,20 +37,22 @@ public class PlayerMovement : MonoBehaviour
     {
         rb.linearVelocity = new Vector2(horizontalMovement * moveSpeed, rb.linearVelocity.y);
         IsTouchingWall();
-        Debug.Log(isOnWall);
         if (!Direction() && !isFlipped)
         {
             sprite.flipX = true;
             isFlipped = true;
-            wallCheckPos.position = new Vector3(wallCheckPos.position.x-0.6f, wallCheckPos.position.y, wallCheckPos.position.z);
+            wallCheckPos.position = new Vector3(wallCheckPos.position.x-0.565f, wallCheckPos.position.y, wallCheckPos.position.z);
         } else if (Direction() && isFlipped)
         {
             sprite.flipX = false;
             isFlipped = false;
-            wallCheckPos.position = new Vector3(wallCheckPos.position.x+0.6f, wallCheckPos.position.y, wallCheckPos.position.z);
+            wallCheckPos.position = new Vector3(wallCheckPos.position.x+0.565f, wallCheckPos.position.y, wallCheckPos.position.z);
         }
-
         Moving();
+
+        animator.SetFloat("yVelocity", rb.linearVelocity.y);
+        animator.SetFloat("magnitude", rb.linearVelocity.magnitude);
+        animator.SetBool("isWallSliding", isOnWall && !IsGrounded());
     }
 
 
@@ -89,6 +92,7 @@ public class PlayerMovement : MonoBehaviour
         if(IsGrounded() || (jumps < maxJumps)){
             if (context.performed)
             {
+                animator.SetTrigger("Jump");
                 jumps++;
                 rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
             }
