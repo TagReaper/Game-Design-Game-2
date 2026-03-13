@@ -16,6 +16,8 @@ public class PlayerMovement : MonoBehaviour
     float horizontalMovement;
     float maxFallSpeed = 10f;
 
+    bool walking = false;//Actually is check for in corner
+
     [Header("Jumping")]
     public float jumpForce = 10f;
 
@@ -35,14 +37,17 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        bool direction = Direction();
+        bool grounded = IsGrounded();
+
         rb.linearVelocity = new Vector2(horizontalMovement * moveSpeed, rb.linearVelocity.y);
         IsTouchingWall();
-        if (!Direction() && !isFlipped)
+        if (!direction && !isFlipped)
         {
             sprite.flipX = true;
             isFlipped = true;
             wallCheckPos.position = new Vector3(wallCheckPos.position.x-0.565f, wallCheckPos.position.y, wallCheckPos.position.z);
-        } else if (Direction() && isFlipped)
+        } else if (direction && isFlipped)
         {
             sprite.flipX = false;
             isFlipped = false;
@@ -52,7 +57,9 @@ public class PlayerMovement : MonoBehaviour
 
         animator.SetFloat("yVelocity", rb.linearVelocity.y);
         animator.SetFloat("magnitude", rb.linearVelocity.magnitude);
-        animator.SetBool("isWallSliding", isOnWall && !IsGrounded());
+        animator.SetBool("isWallSliding", isOnWall && !grounded);
+        animator.SetBool("Grounded", grounded);
+        animator.SetBool("Walking", walking);
     }
 
 
@@ -77,9 +84,11 @@ public class PlayerMovement : MonoBehaviour
         if (!isOnWall)
         {
             horizontalMovement = dir;
+            walking = true;
         } else
         {
             horizontalMovement = 0f;
+            walking = false;
         }
         if (rb.linearVelocity.y < 0f)
         {
