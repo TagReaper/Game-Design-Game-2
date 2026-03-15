@@ -1,22 +1,13 @@
 fileFormatVersion: 2
-guid: 2d92ef42dee817540889807361311cac
+guid: 96f58164ddb780a42b29b1d46315c8ab
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4485158808399994190
-    second: SteveWalking_0
+      213: -1496716059917145258
+    second: SteveWallSliding_0
   - first:
-      213: 4699912998134887561
-    second: SteveWalking_1
-  - first:
-      213: 3218230450537858154
-    second: SteveWalking_2
-  - first:
-      213: 8382100230090014317
-    second: SteveWalking_3
-  - first:
-      213: 5480907775354537802
-    second: SteveWalking_4
+      213: 5223574490984621251
+    second: SteveWallSliding_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -49,7 +40,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -63,7 +54,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -87,7 +78,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -125,111 +116,45 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SteveWalking_0
+      name: SteveWallSliding_0
       rect:
         serializedVersion: 2
-        x: 155
-        y: 1208
-        width: 197
-        height: 288
+        x: 0
+        y: 520
+        width: 520
+        height: 520
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e4d55ef3c2c7e3e30800000000000000
-      internalID: 4485158808399994190
+      spriteID: 65b24076ca89a3be0800000000000000
+      internalID: -1496716059917145258
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SteveWalking_1
+      name: SteveWallSliding_1
       rect:
         serializedVersion: 2
-        x: 675
-        y: 1208
-        width: 197
-        height: 275
+        x: 0
+        y: 0
+        width: 520
+        height: 520
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 984321978f1793140800000000000000
-      internalID: 4699912998134887561
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SteveWalking_2
-      rect:
-        serializedVersion: 2
-        x: 155
-        y: 688
-        width: 210
-        height: 288
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a6487a93b8379ac20800000000000000
-      internalID: 3218230450537858154
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SteveWalking_3
-      rect:
-        serializedVersion: 2
-        x: 675
-        y: 688
-        width: 197
-        height: 275
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d6e3c3ebfb3335470800000000000000
-      internalID: 8382100230090014317
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SteveWalking_4
-      rect:
-        serializedVersion: 2
-        x: 155
-        y: 168
-        width: 197
-        height: 288
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a470fa42598101c40800000000000000
-      internalID: 5480907775354537802
+      spriteID: 3c42ee8e25ddd7840800000000000000
+      internalID: 5223574490984621251
       vertices: []
       indices: 
       edges: []
@@ -238,7 +163,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 999bd2e39b825af4c8cf908739f78d5f
     internalID: 0
     vertices: []
     indices: 
@@ -246,13 +171,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":2.0},"gridSpriteSize":{"x":520.0,"y":520.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      SteveWalking_0: 4485158808399994190
-      SteveWalking_1: 4699912998134887561
-      SteveWalking_2: 3218230450537858154
-      SteveWalking_3: 8382100230090014317
-      SteveWalking_4: 5480907775354537802
+      SteveWallSliding_0: -1496716059917145258
+      SteveWallSliding_1: 5223574490984621251
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

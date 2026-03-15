@@ -1,31 +1,22 @@
 fileFormatVersion: 2
-guid: df63b5d9366c95f4b911c230106c8fd2
+guid: 2e666526ddcdc82438af4f5f69ee75bc
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3527876879021525145
-    second: plants_0
+      213: 61522056768378138
+    second: SteveJumping_0
   - first:
-      213: -1927889906097043966
-    second: plants_1
+      213: 7584458331942802008
+    second: SteveJumping_1
   - first:
-      213: 5004531278555049960
-    second: plants_2
+      213: 6983246280231713074
+    second: SteveJumping_2
   - first:
-      213: -5395861003456798081
-    second: plants_3
+      213: 3210774015630681037
+    second: SteveJumping_3
   - first:
-      213: -6800931340347744238
-    second: plants_4
-  - first:
-      213: 3017316628048636319
-    second: plants_5
-  - first:
-      213: -4350115279957141132
-    second: plants_6
-  - first:
-      213: -810785574404401188
-    second: plants_7
+      213: 7532315458508696149
+    second: SteveJumping_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,7 +87,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -134,177 +125,111 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: plants_0
+      name: SteveJumping_0
       rect:
         serializedVersion: 2
-        x: 90
-        y: 974
-        width: 262
-        height: 171
+        x: 0
+        y: 1040
+        width: 520
+        height: 520
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 767bb968ba67a0fc0800000000000000
-      internalID: -3527876879021525145
+      spriteID: a15d7831cf19ad000800000000000000
+      internalID: 61522056768378138
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plants_1
+      name: SteveJumping_1
       rect:
         serializedVersion: 2
-        x: 558
-        y: 922
-        width: 145
-        height: 210
+        x: 520
+        y: 1040
+        width: 520
+        height: 520
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 20646054852ce35e0800000000000000
-      internalID: -1927889906097043966
+      spriteID: 852d3313ba8614960800000000000000
+      internalID: 7584458331942802008
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plants_2
+      name: SteveJumping_2
       rect:
         serializedVersion: 2
-        x: 584
-        y: 883
-        width: 15
-        height: 28
+        x: 0
+        y: 520
+        width: 520
+        height: 520
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8efea95ceaaa37540800000000000000
-      internalID: 5004531278555049960
+      spriteID: 23977483e7979e060800000000000000
+      internalID: 6983246280231713074
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plants_3
+      name: SteveJumping_3
       rect:
         serializedVersion: 2
-        x: 129
-        y: 467
-        width: 171
-        height: 236
+        x: 520
+        y: 520
+        width: 520
+        height: 520
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f72239f710d0e15b0800000000000000
-      internalID: -5395861003456798081
+      spriteID: dc3a8bfa4f5fe8c20800000000000000
+      internalID: 3210774015630681037
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plants_4
+      name: SteveJumping_4
       rect:
         serializedVersion: 2
-        x: 597
-        y: 623
-        width: 80
-        height: 80
+        x: 0
+        y: 0
+        width: 520
+        height: 520
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 21060c49afc3e91a0800000000000000
-      internalID: -6800931340347744238
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: plants_5
-      rect:
-        serializedVersion: 2
-        x: 597
-        y: 467
-        width: 93
-        height: 158
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f99e7bd9c79afd920800000000000000
-      internalID: 3017316628048636319
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: plants_6
-      rect:
-        serializedVersion: 2
-        x: 181
-        y: 441
-        width: 28
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 479d726633941a3c0800000000000000
-      internalID: -4350115279957141132
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: plants_7
-      rect:
-        serializedVersion: 2
-        x: 129
-        y: 25
-        width: 145
-        height: 223
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: cd75d98d0d28fb4f0800000000000000
-      internalID: -810785574404401188
+      spriteID: 55a28986009288860800000000000000
+      internalID: 7532315458508696149
       vertices: []
       indices: 
       edges: []
@@ -313,7 +238,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 1b49a12dbb240834ab33ccf73d1cf0a4
     internalID: 0
     vertices: []
     indices: 
@@ -321,16 +246,15 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":2.0,"y":3.0},"gridSpriteSize":{"x":520.0,"y":520.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      plants_0: -3527876879021525145
-      plants_1: -1927889906097043966
-      plants_2: 5004531278555049960
-      plants_3: -5395861003456798081
-      plants_4: -6800931340347744238
-      plants_5: 3017316628048636319
-      plants_6: -4350115279957141132
-      plants_7: -810785574404401188
+      SteveJumping_0: 61522056768378138
+      SteveJumping_1: 7584458331942802008
+      SteveJumping_2: 6983246280231713074
+      SteveJumping_3: 3210774015630681037
+      SteveJumping_4: 7532315458508696149
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
