@@ -10,56 +10,61 @@ using static UnityEditor.Experimental.GraphView.GraphView;
 public class EnemyAI : MonoBehaviour
 {
     #region Variables
-    public Transform target;
-    public Transform leftLimit;
-    public Transform rightLimit;
+    public Transform target;     // This is the current entity that the enemy is locked onto
+    public Transform leftLimit;  // Left patroll boundary
+    public Transform rightLimit; // Right patroll boundary
 
-    [SerializeField] private float _speed;
-    [SerializeField] private Animator _animator;
-    [SerializeField] private float attackDist;
-    [SerializeField] private float attackCD;
+    [SerializeField] private float _speed;       // Assigns the enemy movement speed
+    [SerializeField] private Animator _animator; // Assigns the enemy animation controller
+    [SerializeField] private float attackDist;   // Assigns the enemy attack distance
+    [SerializeField] private float attackCD;     // Assigns attack cooldown time
 
-    private Rigidbody2D _rigidbody;
-    private PlayerAwarenessScript _playerAwarenessController;
-    private Vector2 _targetDirection;
-    private float initialCD;
-    private bool cooling;
-    private bool attackMode;
+    private Rigidbody2D _rigidbody;                           // Assigns the enemy 2D body
+    private PlayerAwarenessScript _playerAwarenessController; // References the PlayerAwarenessScript so the variables can be used
+    private Vector2 _targetDirection;                         // Assigns a vector from the enemy to its target
+    private float initialCD;                                  // Internal Variable to record the intial cooldown time
+    private bool cooling;                                    // Internal bool to check if the enemy attack is currently cooling down
+    private bool attackMode;                                 // Internal bool to check if the enemy can attack
     #endregion
 
     #region Main Functions
+    // This function activates once the game starts up
     void Awake()
     {
-        _rigidbody = GetComponent<Rigidbody2D>();
-        _playerAwarenessController = GetComponent<PlayerAwarenessScript>();
-        initialCD = attackCD;
-        SelectTarget();
+        _rigidbody = GetComponent<Rigidbody2D>(); // Gets access to the enemy rigid body
+        _playerAwarenessController = GetComponent<PlayerAwarenessScript>(); // Gets access to the PlayerAwarenessScript
+        initialCD = attackCD; // Records the intial cooldown time
+        SelectTarget();       // Selects an intial target for patrolling to begin
     }
 
     // Update is called once per frame
     private void FixedUpdate()
     {
-        if (!attackMode)
+        if (!attackMode) // Check if the enemy is attacking. Otherwise it just keeps moving towards its target
         {
-            UpdateTargetDirection();
-            RotateTowardsTarget();
-            SetVelocity();
+            UpdateTargetDirection(); // Updates whether the enemy is chasing the player or is patrolling
+            RotateTowardsTarget();   // Orientates the enemy to face its target
+            SetVelocity();           // Sets the velocity that the enemy moves towards its target.
         }
 
+        // This if statement makes sure that if the enemy is outside of its patrol boundary and is not aware of player that they return
         if(!InsideofLimits() && !_playerAwarenessController.AwareOfPlayer && !_animator.GetCurrentAnimatorStateInfo(0).IsName("enemyBODAttack"))
         {
-            SelectTarget();
+            SelectTarget(); // Selects a new target once the enemy reaches a boundary
         }
 
+        // This if statement makes sure that if the enemy attack is on cooldown that they don't attack and that the cooldown resets
         if (cooling)
         {
             Cooldown();
-            _animator.SetBool("isAttacking", false);
-            _animator.SetBool("canMove", true);
+            _animator.SetBool("isAttacking", false); // Deactivates the attack animation
+            _animator.SetBool("canMove", true);      // Activates the enemy ability to move
+            attackMode = false;                      // deactivates internal bool for keeping track of whether enemy can attack
         }
         else
         {
-            if (target != leftLimit && target !=rightLimit)
+            // this if statement makes sure the enemy doesn't attack the boundaries
+            if (target != leftLimit && target != rightLimit)
             {
                 Attack();
             }
@@ -141,7 +146,7 @@ public class EnemyAI : MonoBehaviour
     {
         attackCD -= Time.deltaTime;
 
-        if (attackCD <= 0 && cooling && attackMode)
+        if (attackCD <= 0 && cooling)
         {
             cooling = false;
             attackCD = initialCD;
@@ -174,9 +179,9 @@ public class EnemyAI : MonoBehaviour
             target = rightLimit;
         }
 
-        UpdateTargetDirection();
-        RotateTowardsTarget();
-        SetVelocity();
+        //UpdateTargetDirection();
+        //RotateTowardsTarget();
+        //SetVelocity();
     }
     #endregion
 }
