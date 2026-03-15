@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Timer : MonoBehaviour
+public class Damage : MonoBehaviour
 {
     public float damage;
     public bool enemy;
