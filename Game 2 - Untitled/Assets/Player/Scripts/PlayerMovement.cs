@@ -8,6 +8,8 @@ public class PlayerMovement : MonoBehaviour
     public Animator animator;
     bool isFlipped = false;
     bool isOnWall;
+    public bool isDead = false;
+
     [Header("Movement")]
     public float moveSpeed = 5f;
     public float maxJumps = 2;
@@ -39,27 +41,33 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        bool direction = Direction();
         bool grounded = IsGrounded();
+        if (!isDead)
+        {
+            bool direction = Direction();
 
-        rb.linearVelocity = new Vector2(horizontalMovement * moveSpeed, rb.linearVelocity.y);
-        IsTouchingWall();
-        if (!direction && !isFlipped)
+            rb.linearVelocity = new Vector2(horizontalMovement * moveSpeed, rb.linearVelocity.y);
+            IsTouchingWall();
+            if (!direction && !isFlipped)
+            {
+                sprite.flipX = true;
+                isFlipped = true;
+                weaponPos.localScale = new Vector3(-0.5f, -0.5f, weaponPos.localScale.z);
+                weaponPos.localPosition = new Vector3(-4f, 1.5f, 0f);
+                wallCheckPos.position = new Vector3(wallCheckPos.position.x-0.565f, wallCheckPos.position.y, wallCheckPos.position.z);
+            } else if (direction && isFlipped)
+            {
+                sprite.flipX = false;
+                isFlipped = false;
+                weaponPos.localScale = new Vector3(0.5f, 0.5f, weaponPos.localScale.z);
+                weaponPos.localPosition = new Vector3(4f, 1.5f, 0f);
+                wallCheckPos.position = new Vector3(wallCheckPos.position.x+0.565f, wallCheckPos.position.y, wallCheckPos.position.z);
+            }
+            Moving();
+        } else
         {
-            sprite.flipX = true;
-            isFlipped = true;
-            weaponPos.localScale = new Vector3(-0.5f, -0.5f, weaponPos.localScale.z);
-            weaponPos.localPosition = new Vector3(-4f, 1.5f, 0f);
-            wallCheckPos.position = new Vector3(wallCheckPos.position.x-0.565f, wallCheckPos.position.y, wallCheckPos.position.z);
-        } else if (direction && isFlipped)
-        {
-            sprite.flipX = false;
-            isFlipped = false;
-            weaponPos.localScale = new Vector3(0.5f, 0.5f, weaponPos.localScale.z);
-            weaponPos.localPosition = new Vector3(4f, 1.5f, 0f);
-            wallCheckPos.position = new Vector3(wallCheckPos.position.x+0.565f, wallCheckPos.position.y, wallCheckPos.position.z);
+            rb.linearVelocity = new Vector2(0f, rb.linearVelocity.y);
         }
-        Moving();
 
         animator.SetFloat("yVelocity", rb.linearVelocity.y);
         animator.SetFloat("magnitude", rb.linearVelocity.magnitude);
@@ -104,7 +112,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void Jump(InputAction.CallbackContext context)
     {
-        if(IsGrounded() || (jumps < maxJumps)){
+        if((IsGrounded() || (jumps < maxJumps))&& !isDead){
             if (context.performed)
             {
                 animator.SetTrigger("Jump");
@@ -144,7 +152,9 @@ public class PlayerMovement : MonoBehaviour
             isOnWall = true;
         } else
         {
-            weapon.canAttack = true;
+            if(!isDead){
+                weapon.canAttack = true;
+            }
             maxFallSpeed = 8f;
             isOnWall = false;
         }
