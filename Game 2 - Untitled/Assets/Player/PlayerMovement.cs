@@ -25,9 +25,10 @@ public class PlayerMovement : MonoBehaviour
     public Transform groundCheckPos;
     public Vector2 groundCheckSize = new Vector2(0.5f, 0.05f);
     public Transform wallCheckPos;
+    public Transform weaponPos;
     public Vector2 wallCheckSize = new Vector2(0.5f, 0.05f);
     public LayerMask groundLayer;
-    public Timer cooldown;
+    public Weapon weapon;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -47,11 +48,15 @@ public class PlayerMovement : MonoBehaviour
         {
             sprite.flipX = true;
             isFlipped = true;
+            weaponPos.localScale = new Vector3(-0.5f, -0.5f, weaponPos.localScale.z);
+            weaponPos.localPosition = new Vector3(-4f, 1.5f, 0f);
             wallCheckPos.position = new Vector3(wallCheckPos.position.x-0.565f, wallCheckPos.position.y, wallCheckPos.position.z);
         } else if (direction && isFlipped)
         {
             sprite.flipX = false;
             isFlipped = false;
+            weaponPos.localScale = new Vector3(0.5f, 0.5f, weaponPos.localScale.z);
+            weaponPos.localPosition = new Vector3(4f, 1.5f, 0f);
             wallCheckPos.position = new Vector3(wallCheckPos.position.x+0.565f, wallCheckPos.position.y, wallCheckPos.position.z);
         }
         Moving();
@@ -125,6 +130,7 @@ public class PlayerMovement : MonoBehaviour
     private void IsTouchingWall(){
         if(Physics2D.OverlapBox(wallCheckPos.position, wallCheckSize, 0, groundLayer))
         {
+            weapon.canAttack = false;
             if(!isOnWall && jumps > 0) {
                 jumps--;
             }
@@ -138,6 +144,7 @@ public class PlayerMovement : MonoBehaviour
             isOnWall = true;
         } else
         {
+            weapon.canAttack = true;
             maxFallSpeed = 8f;
             isOnWall = false;
         }
