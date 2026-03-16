@@ -5,6 +5,8 @@ public class EnemyHealth : MonoBehaviour
     public float maxHealth;
     public SpriteRenderer sprite;
     private bool dead = false;
+    public ParticleSystem deathFX;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -18,6 +20,7 @@ public class EnemyHealth : MonoBehaviour
         {
             dead = true;
             Debug.Log("Enemy is DEAD!");
+            deathFX.Play();
         }
     }
 

@@ -9,11 +9,13 @@ public class Enemy_behavior : MonoBehaviour
     public bool inRange;
     public GameObject hotZone;
     public GameObject triggerArea;
+    public ParticleSystem deathFX;
 
     public float attackDistance;
     public float moveSpeed;
     public float timer;
     public Transform leftLimit;
+    public SpriteRenderer sprite;
     public Transform rightLimit;
 
     private Animator anim;
@@ -36,32 +38,40 @@ public class Enemy_behavior : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        //flipping
-        Vector3 currentRotation = transform.eulerAngles;
-        if(target.position.x > transform.position.x && isFlipped)
+        if (deathFX.isPlaying)
         {
-            transform.eulerAngles = new Vector3(currentRotation.x, 0f, currentRotation.z);
-            isFlipped = !isFlipped;
-        } else if(target.position.x < transform.position.x && !isFlipped)
+            Invoke(nameof(Death), 1.5f);
+            sprite.color = new Color(1f,1f,1f,0f);
+        } else
         {
-            transform.eulerAngles = new Vector3(currentRotation.x, 180f, currentRotation.z);
-            isFlipped = !isFlipped;
-        }
+            //flipping
+            Vector3 currentRotation = transform.eulerAngles;
+            if(target.position.x > transform.position.x && isFlipped)
+            {
+                transform.eulerAngles = new Vector3(currentRotation.x, 0f, currentRotation.z);
+                isFlipped = !isFlipped;
+            } else if(target.position.x < transform.position.x && !isFlipped)
+            {
+                transform.eulerAngles = new Vector3(currentRotation.x, 180f, currentRotation.z);
+                isFlipped = !isFlipped;
+            }
 
-        if (!attackMode)
-        {
-            Move();
-        }
+            if (!attackMode)
+            {
+                Move();
+            }
 
-        if(!InsideOfLimits() && !inRange && !anim.GetCurrentAnimatorStateInfo(0).IsName("EvilWizard_Attack"))
-        {
-            SelectTarget();
-        }
+            if(!InsideOfLimits() && !inRange && !anim.GetCurrentAnimatorStateInfo(0).IsName("EvilWizard_Attack"))
+            {
+                SelectTarget();
+            }
 
-        if (inRange)
-        {
-            EnemyLogic();
+            if (inRange)
+            {
+                EnemyLogic();
+            }
         }
+        
     }
     #endregion
 
@@ -148,5 +158,9 @@ public class Enemy_behavior : MonoBehaviour
         {
             target = rightLimit;
         }
+    }
+    private void Death()
+    {
+        Destroy(gameObject);
     }
 }
