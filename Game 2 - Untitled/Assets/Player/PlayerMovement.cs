@@ -25,6 +25,7 @@ public class PlayerMovement : MonoBehaviour
     public Transform groundCheckPos;
     public Vector2 groundCheckSize = new Vector2(0.5f, 0.05f);
     public Transform wallCheckPos;
+    public Transform weaponPos;
     public Vector2 wallCheckSize = new Vector2(0.5f, 0.05f);
     public LayerMask groundLayer;
 
@@ -46,11 +47,15 @@ public class PlayerMovement : MonoBehaviour
         {
             sprite.flipX = true;
             isFlipped = true;
+            weaponPos.localScale = new Vector3(-0.5f, -0.5f, weaponPos.localScale.z);
+            weaponPos.localPosition = new Vector3(-4f, 1.5f, 0f);
             wallCheckPos.position = new Vector3(wallCheckPos.position.x-0.565f, wallCheckPos.position.y, wallCheckPos.position.z);
         } else if (direction && isFlipped)
         {
             sprite.flipX = false;
             isFlipped = false;
+            weaponPos.localScale = new Vector3(0.5f, 0.5f, weaponPos.localScale.z);
+            weaponPos.localPosition = new Vector3(4f, 1.5f, 0f);
             wallCheckPos.position = new Vector3(wallCheckPos.position.x+0.565f, wallCheckPos.position.y, wallCheckPos.position.z);
         }
         Moving();
