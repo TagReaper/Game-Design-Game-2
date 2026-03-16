@@ -18,7 +18,7 @@ public class HotZoneCheck : MonoBehaviour
     {
         if(inRange && !anim.GetCurrentAnimatorStateInfo(0).IsName("EvilWizard_Attack"))
         {
-            enemyParent.Flip();
+            //enemyParent.Flip();
         }
     }
 

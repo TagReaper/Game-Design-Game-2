@@ -21,6 +21,7 @@ public class Enemy_behavior : MonoBehaviour
     private bool attackMode;
     private bool cooling;
     private float intTimer;
+    private bool isFlipped;
     #endregion
 
     #region Main Functions
@@ -35,6 +36,18 @@ public class Enemy_behavior : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
+        //flipping
+        Vector3 currentRotation = transform.eulerAngles;
+        if(target.position.x > transform.position.x && isFlipped)
+        {
+            transform.eulerAngles = new Vector3(currentRotation.x, 0f, currentRotation.z);
+            isFlipped = !isFlipped;
+        } else if(target.position.x < transform.position.x && !isFlipped)
+        {
+            transform.eulerAngles = new Vector3(currentRotation.x, 180f, currentRotation.z);
+            isFlipped = !isFlipped;
+        }
+
         if (!attackMode)
         {
             Move();
@@ -135,22 +148,5 @@ public class Enemy_behavior : MonoBehaviour
         {
             target = rightLimit;
         }
-
-        Flip();
-    }
-
-    public void Flip()
-    {
-        Vector3 rotation = transform.eulerAngles;
-        if(transform.position.x > target.position.x)
-        {
-            rotation.y = 180f;
-        }
-        else
-        {
-            rotation.y = 0f;
-        }
-
-        transform.eulerAngles = rotation;
     }
 }

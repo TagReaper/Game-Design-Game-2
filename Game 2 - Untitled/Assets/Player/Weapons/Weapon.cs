@@ -23,6 +23,6 @@ public class Weapon : MonoBehaviour
     }
     public void Hit()
     {
-        Debug.Log("Hit");
+        //Debug.Log("Hit");
     }
 }
