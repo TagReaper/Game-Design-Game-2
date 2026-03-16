@@ -1,0 +1,28 @@
+using UnityEngine;
+using UnityEngine.InputSystem;
+
+public class Weapon : MonoBehaviour
+{
+    public SpriteRenderer sprite;
+    public bool isRanged;
+    public Timer cooldown;
+    public Animator animator;
+    public bool canAttack = true;
+
+    public void Attack(InputAction.CallbackContext context)
+    {
+        if(cooldown.isEnded && canAttack){
+            if (context.performed)
+            {
+                animator.SetTrigger("Swing");
+            Hit();
+            cooldown.Play();
+            }
+        }
+
+    }
+    public void Hit()
+    {
+        Debug.Log("Hit");
+    }
+}
