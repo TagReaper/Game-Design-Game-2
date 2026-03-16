@@ -488,7 +488,7 @@ MonoBehaviour:
   inRange: 0
   hotZone: {fileID: 139350816}
   triggerArea: {fileID: 1601061694}
-  attackDistance: 2
+  attackDistance: 1
   moveSpeed: 2
   timer: 3
   leftLimit: {fileID: 1468366965}
