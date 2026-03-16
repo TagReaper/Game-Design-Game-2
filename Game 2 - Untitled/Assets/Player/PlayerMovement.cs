@@ -28,6 +28,7 @@ public class PlayerMovement : MonoBehaviour
     public Transform weaponPos;
     public Vector2 wallCheckSize = new Vector2(0.5f, 0.05f);
     public LayerMask groundLayer;
+    public Weapon weapon;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -129,6 +130,7 @@ public class PlayerMovement : MonoBehaviour
     private void IsTouchingWall(){
         if(Physics2D.OverlapBox(wallCheckPos.position, wallCheckSize, 0, groundLayer))
         {
+            weapon.canAttack = false;
             if(!isOnWall && jumps > 0) {
                 jumps--;
             }
@@ -142,6 +144,7 @@ public class PlayerMovement : MonoBehaviour
             isOnWall = true;
         } else
         {
+            weapon.canAttack = true;
             maxFallSpeed = 8f;
             isOnWall = false;
         }

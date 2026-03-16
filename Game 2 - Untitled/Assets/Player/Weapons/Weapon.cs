@@ -7,10 +7,11 @@ public class Weapon : MonoBehaviour
     public bool isRanged;
     public Timer cooldown;
     public Animator animator;
+    public bool canAttack = true;
 
     public void Attack(InputAction.CallbackContext context)
     {
-        if(cooldown.isEnded){
+        if(cooldown.isEnded && canAttack){
             if (context.performed)
             {
                 animator.SetTrigger("Swing");
