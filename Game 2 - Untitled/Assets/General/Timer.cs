@@ -6,7 +6,7 @@ public class Timer : MonoBehaviour
     public float waitTime;
     public bool looping;
     public bool paused;
-    public bool isEnded = false;
+    public bool isEnded = true;
     public float timeRemaining = 0;
 
 
