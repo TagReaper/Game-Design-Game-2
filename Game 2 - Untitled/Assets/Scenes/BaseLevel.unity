@@ -52825,14 +52825,14 @@ MonoBehaviour:
   Priority:
     Enabled: 0
     m_Value: 0
-  OutputChannel: -1
-  StandbyUpdate: 2
+  OutputChannel: 1
+  StandbyUpdate: 0
   m_StreamingVersion: 20241001
   m_LegacyPriority: 0
   Target:
-    TrackingTarget: {fileID: 343969723}
-    LookAtTarget: {fileID: 0}
-    CustomLookAtTarget: 0
+    TrackingTarget: {fileID: 1845657616}
+    LookAtTarget: {fileID: 1845657616}
+    CustomLookAtTarget: 1
   Lens:
     FieldOfView: 60
     OrthographicSize: 40
@@ -79528,8 +79528,8 @@ MonoBehaviour:
   ShowCameraFrustum: 1
   IgnoreTimeScale: 0
   WorldUpOverride: {fileID: 0}
-  ChannelMask: -1
-  UpdateMethod: 2
+  ChannelMask: 1
+  UpdateMethod: 0
   BlendUpdateMethod: 1
   LensModeOverride:
     Enabled: 0
@@ -79630,7 +79630,7 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
-  orthographic: 1
+  orthographic: 0
   orthographic size: 3.2556818
   m_Depth: -1
   m_CullingMask:
@@ -79656,7 +79656,7 @@ Transform:
   m_GameObject: {fileID: 2121219882}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.18063354, y: 52.671307, z: -8}
+  m_LocalPosition: {x: -58.89, y: 1.03, z: -8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -83593,10 +83593,10 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 134363965}
+  - {fileID: 231362694}
   - {fileID: 1614783664}
   - {fileID: 2121219889}
   - {fileID: 1845657616}
-  - {fileID: 231362694}
   - {fileID: 23233887}
   - {fileID: 11714257}
   - {fileID: 1378014288}
