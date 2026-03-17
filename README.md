@@ -1,4 +1,4 @@
-# Game Design Game 2: Untitled
+# Game Design Game 2: Time Keepers
 This project is for CSE-4453, Project 2
 
 ## Contributors & Role:
