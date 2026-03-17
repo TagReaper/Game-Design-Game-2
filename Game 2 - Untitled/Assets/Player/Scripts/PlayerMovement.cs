@@ -1,5 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
+
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -164,5 +166,10 @@ public class PlayerMovement : MonoBehaviour
         Gizmos.color = Color.white;
         Gizmos.DrawCube(groundCheckPos.position, groundCheckSize);
         Gizmos.DrawCube(wallCheckPos.position, wallCheckSize);
+    }
+
+    public void Restart()
+    {
+        SceneManager.LoadScene("MainMenu");
     }
 }
