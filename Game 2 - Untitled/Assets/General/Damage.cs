@@ -15,7 +15,6 @@ public class Damage : MonoBehaviour
                 other.gameObject.GetComponent<PlayerHealth>().Hurt(damage);
             } else if (other.gameObject.CompareTag("Enemy") && !enemy)
             {
-                Debug.Log("HIT");
                 other.gameObject.GetComponent<EnemyHealth>().Hurt(damage);
             }
         }
