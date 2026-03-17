@@ -76959,6 +76959,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1541171333978903313, guid: 085a61997903d3a4395bdbae9c330448, type: 3}
+      propertyPath: maxHealth
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 3628727413441171452, guid: 085a61997903d3a4395bdbae9c330448, type: 3}
       propertyPath: leftLimit
       value: 
@@ -80026,7 +80030,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 3.2386363
+  orthographic size: 0
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -80051,7 +80055,7 @@ Transform:
   m_GameObject: {fileID: 2121219882}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -58.89, y: 1.03, z: -8}
+  m_LocalPosition: {x: 0.18063354, y: 52.671307, z: -8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
