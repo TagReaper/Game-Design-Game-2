@@ -52706,7 +52706,7 @@ MonoBehaviour:
   m_StreamingVersion: 20241001
   m_LegacyPriority: 0
   Target:
-    TrackingTarget: {fileID: 1845657616}
+    TrackingTarget: {fileID: 343969723}
     LookAtTarget: {fileID: 0}
     CustomLookAtTarget: 0
   Lens:
@@ -76971,6 +76971,10 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 5440516751346875893, guid: 085a61997903d3a4395bdbae9c330448, type: 3}
+      propertyPath: damage
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 5803517827769577000, guid: 085a61997903d3a4395bdbae9c330448, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.85
@@ -80022,7 +80026,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 6.1363635
+  orthographic size: 3.2386363
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -80047,7 +80051,7 @@ Transform:
   m_GameObject: {fileID: 2121219882}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.18061447, y: 52.67131, z: -8}
+  m_LocalPosition: {x: -58.89, y: 1.03, z: -8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
