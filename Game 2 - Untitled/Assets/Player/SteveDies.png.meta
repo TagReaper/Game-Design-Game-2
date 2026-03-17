@@ -1,40 +1,7 @@
 fileFormatVersion: 2
-<<<<<<<< HEAD:Game 2 - Untitled/Assets/Player/SteveDies.png.meta
 guid: 5e8ec5314a535d4438c84e5f989d9b72
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: 5891710346646165868
-    second: SteveDies_0
-  - first:
-      213: -1317871016950224454
-    second: SteveDies_1
-  - first:
-      213: 8349508522676212116
-    second: SteveDies_2
-  - first:
-      213: 1412876518543209766
-    second: SteveDies_3
-  - first:
-      213: -1930713442567092077
-    second: SteveDies_4
-========
-guid: ae38d849ddeeaed47899a445dbb61065
-TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: -2000677405605406816
-    second: demon_walk_10_0
-  - first:
-      213: 2061034912013297591
-    second: demon_walk_10_1
-  - first:
-      213: -2138037057077171455
-    second: demon_walk_10_2
-  - first:
-      213: 6327862627174212142
-    second: demon_walk_10_3
->>>>>>>> e3a5d384cd8eaf4976ced945e61bd19ceca37128:Game 2 - Untitled/Assets/Enemies/boss_demon_slime_FREE_v1.0/boss_demon_slime_FREE_v1.0/individual sprites/02_demon_walk/demon_walk_10.png.meta
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -67,16 +34,16 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: 1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -96,9 +63,9 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
-  applyGammaDecoding: 0
+  applyGammaDecoding: 1
   swizzle: 50462976
-  cookieLightType: 0
+  cookieLightType: 2
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
@@ -118,7 +85,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -126,13 +93,12 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-<<<<<<<< HEAD:Game 2 - Untitled/Assets/Player/SteveDies.png.meta
   - serializedVersion: 4
     buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -140,13 +106,10 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-========
->>>>>>>> e3a5d384cd8eaf4976ced945e61bd19ceca37128:Game 2 - Untitled/Assets/Enemies/boss_demon_slime_FREE_v1.0/boss_demon_slime_FREE_v1.0/individual sprites/02_demon_walk/demon_walk_10.png.meta
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-<<<<<<<< HEAD:Game 2 - Untitled/Assets/Player/SteveDies.png.meta
       name: SteveDies_0
       rect:
         serializedVersion: 2
@@ -160,10 +123,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: c69965b385f83c150800000000000000
-      internalID: 5891710346646165868
+      spriteID: 95312f88e9b668b4b96b3f72bf00754b
+      internalID: 794673935
       vertices: []
       indices: 
       edges: []
@@ -182,10 +145,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: ab926eeda4bf5bde0800000000000000
-      internalID: -1317871016950224454
+      spriteID: b4045a024ee1b5941bdc396942e4f40e
+      internalID: 1137208610
       vertices: []
       indices: 
       edges: []
@@ -204,10 +167,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 491563783c96fd370800000000000000
-      internalID: 8349508522676212116
+      spriteID: eecf5abb20106004a8b329033faadeb8
+      internalID: -1007810875
       vertices: []
       indices: 
       edges: []
@@ -226,111 +189,32 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 625324735bb8b9310800000000000000
-      internalID: 1412876518543209766
+      spriteID: d7365789ec0cac94faff8dae7401f196
+      internalID: -2113045901
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
       name: SteveDies_4
-========
-      name: demon_walk_10_0
->>>>>>>> e3a5d384cd8eaf4976ced945e61bd19ceca37128:Game 2 - Untitled/Assets/Enemies/boss_demon_slime_FREE_v1.0/boss_demon_slime_FREE_v1.0/individual sprites/02_demon_walk/demon_walk_10.png.meta
       rect:
         serializedVersion: 2
-        x: 107
+        x: 0
         y: 0
-<<<<<<<< HEAD:Game 2 - Untitled/Assets/Player/SteveDies.png.meta
         width: 520
         height: 520
-========
-        width: 75
-        height: 89
->>>>>>>> e3a5d384cd8eaf4976ced945e61bd19ceca37128:Game 2 - Untitled/Assets/Enemies/boss_demon_slime_FREE_v1.0/boss_demon_slime_FREE_v1.0/individual sprites/02_demon_walk/demon_walk_10.png.meta
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-<<<<<<<< HEAD:Game 2 - Untitled/Assets/Player/SteveDies.png.meta
-      spriteID: 39887b47a5ab435e0800000000000000
-      internalID: -1930713442567092077
-========
-      spriteID: 0a75db8ef7a2c34e0800000000000000
-      internalID: -2000677405605406816
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: demon_walk_10_1
-      rect:
-        serializedVersion: 2
-        x: 115
-        y: 87
-        width: 8
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7b72b3825544a9c10800000000000000
-      internalID: 2061034912013297591
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: demon_walk_10_2
-      rect:
-        serializedVersion: 2
-        x: 123
-        y: 87
-        width: 10
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 10b2b48df9a2452e0800000000000000
-      internalID: -2138037057077171455
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: demon_walk_10_3
-      rect:
-        serializedVersion: 2
-        x: 151
-        y: 70
-        width: 27
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e226030788511d750800000000000000
-      internalID: 6327862627174212142
->>>>>>>> e3a5d384cd8eaf4976ced945e61bd19ceca37128:Game 2 - Untitled/Assets/Enemies/boss_demon_slime_FREE_v1.0/boss_demon_slime_FREE_v1.0/individual sprites/02_demon_walk/demon_walk_10.png.meta
+      spriteID: 83effc5daa1f4cc429cd6fcbf2e4bc61
+      internalID: -446183593
       vertices: []
       indices: 
       edges: []
@@ -339,7 +223,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 921790b524d8cd741815a17fd067020b
+    spriteID: 0389ec8c95befa046a8d28ef66fdf83e
     internalID: 0
     vertices: []
     indices: 
@@ -351,18 +235,11 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":2.0,"y":3.0},"gridSpriteSize":{"x":520.0,"y":520.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-<<<<<<<< HEAD:Game 2 - Untitled/Assets/Player/SteveDies.png.meta
-      SteveDies_0: 5891710346646165868
-      SteveDies_1: -1317871016950224454
-      SteveDies_2: 8349508522676212116
-      SteveDies_3: 1412876518543209766
-      SteveDies_4: -1930713442567092077
-========
-      demon_walk_10_0: -2000677405605406816
-      demon_walk_10_1: 2061034912013297591
-      demon_walk_10_2: -2138037057077171455
-      demon_walk_10_3: 6327862627174212142
->>>>>>>> e3a5d384cd8eaf4976ced945e61bd19ceca37128:Game 2 - Untitled/Assets/Enemies/boss_demon_slime_FREE_v1.0/boss_demon_slime_FREE_v1.0/individual sprites/02_demon_walk/demon_walk_10.png.meta
+      SteveDies_0: 794673935
+      SteveDies_1: 1137208610
+      SteveDies_2: -1007810875
+      SteveDies_3: -2113045901
+      SteveDies_4: -446183593
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

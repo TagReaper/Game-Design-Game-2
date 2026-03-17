@@ -7423,6 +7423,7 @@ MonoBehaviour:
   health: 50
   maxHealth: 50
   healthBar: {fileID: 1907216938}
+  movement: {fileID: 940556986}
   sprite: {fileID: 940556990}
 --- !u!95 &940556984
 Animator:
@@ -7599,6 +7600,7 @@ MonoBehaviour:
   rb: {fileID: 940556989}
   sprite: {fileID: 940556990}
   animator: {fileID: 940556984}
+  isDead: 0
   moveSpeed: 6
   maxJumps: 2
   jumpForce: 7
@@ -7650,7 +7652,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 16.25, y: 16.25}
-    newSize: {x: 34.666668, y: 34.666668}
+    newSize: {x: 16.25, y: 16.25}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -7696,7 +7698,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 16.25, y: 16.25}
-    newSize: {x: 34.666668, y: 34.666668}
+    newSize: {x: 16.25, y: 16.25}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -7784,7 +7786,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 34.666668, y: 34.666668}
+  m_Size: {x: 16.25, y: 16.25}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -8919,7 +8921,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18dfbb0085cf8f44ba37e9c8c32c5fee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Damage
-  damage: 20
+  damage: 5
   enemy: 1
   active: 0
 --- !u!1 &1367371368
@@ -9792,7 +9794,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 3.1818182
+  orthographic size: 3.3352273
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
