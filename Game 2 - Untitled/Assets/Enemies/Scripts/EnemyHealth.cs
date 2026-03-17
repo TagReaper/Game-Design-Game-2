@@ -28,7 +28,7 @@ public class EnemyHealth : MonoBehaviour
     {
         sprite.color = new Color(1f, 0f, 0f, 1f);
         health -= damage;
-        Invoke(nameof(Flash), 0.1f);
+        Invoke(nameof(Flash), 0.15f);
     }
 
     private void Flash()

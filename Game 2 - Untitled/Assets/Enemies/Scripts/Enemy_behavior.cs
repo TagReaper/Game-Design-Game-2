@@ -56,6 +56,8 @@ public class Enemy_behavior : MonoBehaviour
                 isFlipped = !isFlipped;
             }
 
+            anim.SetBool("isAttack", cooling);
+
             if (!attackMode)
             {
                 Move();
@@ -71,7 +73,6 @@ public class Enemy_behavior : MonoBehaviour
                 EnemyLogic();
             }
         }
-        
     }
     #endregion
 
@@ -87,12 +88,12 @@ public class Enemy_behavior : MonoBehaviour
         else if (attackDistance >= distance && cooling == false)
         {
             Attack();
+            TriggerCooling();
         }
 
         if (cooling)
         {
             Cooldown();
-            anim.SetBool("isAttack", false);
         }
     }
 
@@ -114,7 +115,7 @@ public class Enemy_behavior : MonoBehaviour
         attackMode = true;
 
         anim.SetBool("canWalk", false);
-        anim.SetBool("isAttack", true);
+        anim.SetTrigger("Attack");
     }
 
     void Cooldown()
@@ -125,6 +126,7 @@ public class Enemy_behavior : MonoBehaviour
         {
             cooling = false;
             timer = intTimer;
+            attackMode = false;
         }
     }
 
