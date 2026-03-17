@@ -59559,8 +59559,8 @@ RectTransform:
   m_GameObject: {fileID: 911011944}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1693033566}
   - {fileID: 158789114}
@@ -59569,7 +59569,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 32, y: -32}
+  m_AnchoredPosition: {x: -110, y: 35}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &951079964
@@ -78489,8 +78489,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3fd627618ef29b64a834f8d2d0e195c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  health: 50
-  maxHealth: 50
+  health: 100
+  maxHealth: 100
   healthBar: {fileID: 158789115}
   movement: {fileID: 1845657621}
   sprite: {fileID: 1845657625}
@@ -79631,7 +79631,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 0
-  orthographic size: 3.2556818
+  orthographic size: 6.1363635
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
