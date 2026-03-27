@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Game 2 - Untitled/Assets/Decoration/Pixel Art Bush Pack/Bush 1.meta
+guid: baf1ca728a45d86409fbf32097fc45c1
+========
 guid: 874a20fbf22fa674297659593ce2cbce
+>>>>>>>> e3a5d384cd8eaf4976ced945e61bd19ceca37128:Game 2 - Untitled/Assets/Enemies/Animations/EvilWizard2.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

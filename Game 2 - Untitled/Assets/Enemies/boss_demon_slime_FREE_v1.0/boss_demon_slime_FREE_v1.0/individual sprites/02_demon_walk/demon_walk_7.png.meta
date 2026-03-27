@@ -1,19 +1,7 @@
 fileFormatVersion: 2
-guid: 86b71ef7530886646a86bc6db83d9193
+guid: acae11b45d7839b46b347fbbedea079a
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: 4602796595511023194
-    second: demon_walk_7_0
-  - first:
-      213: 8670405164954003639
-    second: demon_walk_7_1
-  - first:
-      213: 7559217512173457489
-    second: demon_walk_7_2
-  - first:
-      213: -6611510351166212920
-    second: demon_walk_7_3
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +39,7 @@ TextureImporter:
     mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: 1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -75,16 +63,16 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
-  applyGammaDecoding: 0
+  applyGammaDecoding: 1
   swizzle: 50462976
-  cookieLightType: 0
+  cookieLightType: 2
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -97,7 +85,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -107,95 +95,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: demon_walk_7_0
-      rect:
-        serializedVersion: 2
-        x: 105
-        y: 0
-        width: 87
-        height: 89
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a56dfc0fd1b60ef30800000000000000
-      internalID: 4602796595511023194
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: demon_walk_7_1
-      rect:
-        serializedVersion: 2
-        x: 115
-        y: 87
-        width: 8
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7b8abcb4f87735870800000000000000
-      internalID: 8670405164954003639
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: demon_walk_7_2
-      rect:
-        serializedVersion: 2
-        x: 123
-        y: 87
-        width: 10
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 150d201e64cb7e860800000000000000
-      internalID: 7559217512173457489
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: demon_walk_7_3
-      rect:
-        serializedVersion: 2
-        x: 151
-        y: 70
-        width: 27
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8c47be96d523f34a0800000000000000
-      internalID: -6611510351166212920
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     customData: 
     physicsShape: []
@@ -209,11 +109,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      demon_walk_7_0: 4602796595511023194
-      demon_walk_7_1: 8670405164954003639
-      demon_walk_7_2: 7559217512173457489
-      demon_walk_7_3: -6611510351166212920
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

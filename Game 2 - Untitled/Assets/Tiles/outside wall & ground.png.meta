@@ -1,0 +1,576 @@
+fileFormatVersion: 2
+guid: d1c837968f6b7e141afb7c9f9ec8540f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7483987211123291642
+    second: outside wall & ground_0
+  - first:
+      213: 8428169604384094724
+    second: outside wall & ground_1
+  - first:
+      213: 8181871118256733200
+    second: outside wall & ground_2
+  - first:
+      213: 2289159584125630460
+    second: outside wall & ground_3
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 31
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: outside wall & ground_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3744
+        width: 416
+        height: 416
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af5f19677b67cd760800000000000000
+      internalID: 7483987211123291642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: outside wall & ground_1
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 3744
+        width: 416
+        height: 416
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40afe00d99fd6f470800000000000000
+      internalID: 8428169604384094724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: outside wall & ground_2
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 3744
+        width: 416
+        height: 416
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01c78b1ce68db8170800000000000000
+      internalID: 8181871118256733200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: outside wall & ground_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3328
+        width: 416
+        height: 416
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c191272e2fde8f0428e4aaf3e3124bed
+      internalID: 555732362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: outside wall & ground_5
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 3328
+        width: 416
+        height: 416
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4837eab1e970e4f49adcc039dc9e34f4
+      internalID: -77519294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: outside wall & ground_6
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 3328
+        width: 416
+        height: 416
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4677aea3844e0974cac90298abf4f008
+      internalID: 904473530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: outside wall & ground_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2912
+        width: 416
+        height: 416
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acb84f0e90f08c641947ded7835e9777
+      internalID: 1591603838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: outside wall & ground_9
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 2912
+        width: 416
+        height: 416
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6b281d3fc5e565488ed9abef011cdc9
+      internalID: -637398106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: outside wall & ground_10
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 2912
+        width: 416
+        height: 416
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 710a4c41f0f115f4b83b702329166024
+      internalID: -1349681343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: outside wall & ground_15
+      rect:
+        serializedVersion: 2
+        x: 1248
+        y: 2496
+        width: 416
+        height: 416
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf05c3793046cd34998b05be7c88cff1
+      internalID: 1213966806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: outside wall & ground_16
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 2496
+        width: 416
+        height: 416
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaa199fbd2033bc4487722a19d963136
+      internalID: 444892866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: outside wall & ground_18
+      rect:
+        serializedVersion: 2
+        x: 1248
+        y: 2080
+        width: 416
+        height: 416
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba65883f8a862e949bc91730028b5f6a
+      internalID: -736035238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: outside wall & ground_19
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 2080
+        width: 416
+        height: 416
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20c50e81a44200042add76533701f315
+      internalID: 536797817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: outside wall & ground_23
+      rect:
+        serializedVersion: 2
+        x: 1248
+        y: 1664
+        width: 416
+        height: 416
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f44a40066b6339547bfec4e3fdbe71ee
+      internalID: 1264745233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: outside wall & ground_24
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 1664
+        width: 416
+        height: 416
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d921a0cadd19c4744b1bd4de722778b1
+      internalID: 2000107591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: outside wall & ground_26
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 1248
+        width: 416
+        height: 416
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc72c98574a308b468c5285563aafac4
+      internalID: -1689621965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: outside wall & ground_28
+      rect:
+        serializedVersion: 2
+        x: 1248
+        y: 1248
+        width: 416
+        height: 416
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82cb398c94ab2414e9888d6a6b386035
+      internalID: -1562448127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: outside wall & ground_29
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 1248
+        width: 416
+        height: 416
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: feeedac9ee16b2b4a9cf7a9afe508bb7
+      internalID: 1852435768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 387b01900e9ba344896d3c3a3d747710
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":5.0,"y":10.0},"gridSpriteSize":{"x":416.0,"y":416.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      outside wall & ground_0: 7483987211123291642
+      outside wall & ground_1: 8428169604384094724
+      outside wall & ground_10: -1349681343
+      outside wall & ground_11: 1647273847
+      outside wall & ground_12: 1933233757
+      outside wall & ground_13: -240200658
+      outside wall & ground_14: -1174648907
+      outside wall & ground_15: 1213966806
+      outside wall & ground_16: 444892866
+      outside wall & ground_17: -1914825355
+      outside wall & ground_18: -736035238
+      outside wall & ground_19: 536797817
+      outside wall & ground_2: 8181871118256733200
+      outside wall & ground_20: -536445694
+      outside wall & ground_21: 932820014
+      outside wall & ground_22: 1678301801
+      outside wall & ground_23: 1264745233
+      outside wall & ground_24: 2000107591
+      outside wall & ground_25: -2014762073
+      outside wall & ground_26: -1689621965
+      outside wall & ground_27: -1638773771
+      outside wall & ground_28: -1562448127
+      outside wall & ground_29: 1852435768
+      outside wall & ground_3: 2289159584125630460
+      outside wall & ground_30: 188740487
+      outside wall & ground_31: 137207584
+      outside wall & ground_32: -1487159607
+      outside wall & ground_33: -1796198288
+      outside wall & ground_34: 366873096
+      outside wall & ground_35: 1118916679
+      outside wall & ground_4: 555732362
+      outside wall & ground_5: -77519294
+      outside wall & ground_6: 904473530
+      outside wall & ground_7: -1911082375
+      outside wall & ground_8: 1591603838
+      outside wall & ground_9: -637398106
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
